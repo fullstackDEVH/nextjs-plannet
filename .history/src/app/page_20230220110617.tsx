@@ -1,8 +1,7 @@
-"use client";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
-import DeleteIcon from "@mui/icons-material/Delete";
+import AbcIcon from "@mui/icons-material/Abc";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -10,7 +9,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp; <DeleteIcon />
+          Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
         <div>
@@ -28,6 +27,7 @@ export default function Home() {
               height={24}
               priority
             />
+            <svg data-testid="AbcIcon"></svg>
           </a>
         </div>
       </div>
