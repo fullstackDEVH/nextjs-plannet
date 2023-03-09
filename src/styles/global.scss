@@ -1,0 +1,104 @@
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: var(--font-family);
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  #app {
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  
+  .container {
+    background-image: url("https://wixdomplanet.io/images/v2/landing/background.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+  
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1e;
+  }
+
+  .layout {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+  }
+  
+  img {
+    display: block;
+  }
+
+  .line_camp_2{ 
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2; /* number of lines to show */
+  }
+.MuiPagination-ul > li > button {
+  color : #eee;
+  transition: all 0.3s ease;
+}
+.MuiPagination-ul > li:first-of-type > button {
+    background-color: #222933;
+    & > svg {
+      font-size: 2rem;
+    }
+}
+
+.MuiPagination-ul > li:last-of-type > button {
+  background-color: #222933;
+
+  & > svg {
+    font-size: 2rem;
+  }
+}
+
+// btn pagination selected
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #222933;
+  font-size: 1rem;
+}
+
+// custom textfield search mui
+
+.MuiFormControl-root {
+
+  #outlined-multiline-static-label {
+    color : white;
+  }
+
+  .MuiInputBase-root {
+    color: white;
+
+
+    .MuiOutlinedInput-notchedOutline {
+      // border-color: linear-gradient(239deg,#3262dd,#7af4ae 98.78%);;
+      border-color: rgb(214, 202, 202);
+    }
+  }
+}

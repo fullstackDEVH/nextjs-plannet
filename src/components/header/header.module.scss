@@ -1,0 +1,127 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  color: white;
+
+  &__solid {
+    height: 20px;
+    width: 1px;
+    background-color: white;
+
+    margin-left: 1rem;
+  }
+
+  &__left {
+    width: 30%;
+    height: 100%;
+
+    &__logo {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      a {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      span {
+        margin-left: 8px;
+        color: #9b9dae;
+        font-size: 0.95rem;
+        display: block;
+
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  &__right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+
+    &__side_bar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .side_bar_list {
+        display: flex;
+
+        & > a {
+          padding-left: 1.5rem;
+          color: #d4d4d4;
+          font-size: 0.96rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #386df5;
+          }
+        }
+      }
+
+      .side_bar_btn {
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        padding: 0.6rem 2rem;
+
+        overflow: hidden;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn_container {
+          background: linear-gradient(239deg, #3262dd, #7af4ae 98.78%);
+          height: 100%;
+          width: 400%;
+          transform: translateX(-24%);
+
+
+          transition: color 0.6s ease;
+          position: absolute;
+        }
+
+        &:hover .btn_container{
+          transform: translateX(-30%);
+        }
+
+        & > span {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-size: 1rem;
+          color: #000;
+          position: relative;
+          z-index: 10;
+
+          color: white;
+        }
+      }
+    }
+  }
+
+}
